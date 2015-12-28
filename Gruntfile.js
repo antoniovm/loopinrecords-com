@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
     clean: {
       build: {
-        src: [ 'build' ]
+        src: [ 'build/**' ]
       },
       stylesheets: {
         src: [ 'build/**/*.css', '!build/style.css' ]
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         files: {
-          'build/style.css': [ 'build/**/*.css' ]
+          'build/style.css': [ 'build/css/*.css' ]
         }
       }
     },
