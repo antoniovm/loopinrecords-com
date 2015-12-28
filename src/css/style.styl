@@ -45,12 +45,13 @@ body, input, select, textarea
 
 
 // Navigatin bar
-navbar-bg-color = #312450 
+navbar-bg-color = #312450
+navbar-height = 3.5em
 
 #navbar
-    height: 3.5em
+    height: navbar-height
     left: 0
-    line-height: 3.5em
+    line-height: navbar-height
     overflow: hidden
     padding: 0 
     background: navbar-bg-color
@@ -59,7 +60,7 @@ navbar-bg-color = #312450
     text-align: center
     top: 0
     width: 100%
-    height: 3.5em
+    height: navbar-height
     z-index: 10000
     
 @media screen and (max-width: 736px)
@@ -68,12 +69,27 @@ navbar-bg-color = #312450
     
 @media screen and (max-width: 1280px)
     #navbar 
-        height: 3.5em
+        height: navbar-height
         left: 0
-        line-height: 3.5em
+        line-height: navbar-height
         overflow: hidden
         padding: 0
         text-align: center
         top: 0
+
+    #navbar > .inner 
+        flex-direction: row
+        align-items: stretch
+        height: inherit
+        line-height: inherit
+    
+    #navbar > .inner 
+        display: flex
+        flex-direction: column
+        justify-content: center
+        transform: translateY(0)
+        transition: opacity 1s ease
+        min-height: 100%
+        opacity: 1
         width: 100%
     
