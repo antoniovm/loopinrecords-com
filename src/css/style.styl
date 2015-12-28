@@ -63,7 +63,7 @@ navbar-height = 3.5em
     height navbar-height
     z-index 10000
     
-#navbar > .inner 
+    > .inner 
         display flex
         flex-direction column
         justify-content center
@@ -72,10 +72,26 @@ navbar-height = 3.5em
         min-height 100%
         opacity 1
         width 100%
+    
+    nav 
+        > ul 
+            list-style none
+            padding 0
         
-#navbar nav > ul 
-    list-style none
-    padding 0
+            > li
+                transform translateY(0)
+                transition opacity 0.15s ease, transform 0.75s ease
+                margin 1.5em 0 0 0
+                opacity 1
+                padding 0
+                position relative
+    
+            > li:first-child
+                margin: 0;
+
+            for n in 1 2 3 4 5
+                > li:nth-child({n})
+                    transition-delay: n * 0.2 + 0.25s
         
 @media screen and (max-width: 736px)
     #navbar 
@@ -106,3 +122,11 @@ navbar-height = 3.5em
                 height inherit
                 line-height inherit
                 margin 0
+                
+                li 
+                    display block
+                    height inherit
+                    line-height inherit
+                    margin 0 0 0 2em
+                    padding 0
+
