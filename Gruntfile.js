@@ -19,10 +19,10 @@ module.exports = function(grunt) {
         src: [ 'build' ]
       },
       stylesheets: {
-        src: [ 'build/**/*.css', '!build/application.css' ]
+        src: [ 'build/**/*.css', '!build/style.css' ]
       },
       scripts: {
-        src: [ 'build/**/*.js', '!build/application.js' ]
+        src: [ 'build/**/*.js', '!build/script.js' ]
       },
     },
 
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         files: {
-          'build/application.css': [ 'build/**/*.css' ]
+          'build/style.css': [ 'build/**/*.css' ]
         }
       }
     },
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
-          'build/application.js': [ 'build/**/*.js' ]
+          'build/script.js': [ 'build/**/*.js' ]
         }
       }
     },
