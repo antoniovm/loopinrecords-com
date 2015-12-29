@@ -53,7 +53,13 @@ a
     position relative
 
     &.style1
-        background-color: intro-bg-color
+        background-color intro-bg-color
+
+    &.fullscreen
+        display flex
+        flex-direction column
+        justify-content center
+        min-height 100vh
 
 // <Navigation bar>
 #navbar
@@ -142,8 +148,16 @@ a
                 
             &:hover
                 color navbar-hover-color
-// </Navigation bar>            
+// </Navigation bar>
 
+// <Intro>
+#intro
+    background-attachment fixed
+    background-image url("images/intro.svg")
+    background-position top right
+    background-repeat no-repeat
+    background-size 100% 100%
+// </Intro>
     
 @media screen and (max-width: 1680px)
     body, input, select, textarea 
@@ -153,6 +167,7 @@ a
     body, input, select, textarea 
         font-size 12pt
 
+    // <Navigation bar>
     #navbar 
         height navbar-height
         left 0
@@ -194,6 +209,15 @@ a
                 &:after
                     background-image none
                     background-color navbar-after-link-color
+
+    // </Navigation bar>
+
+    // <Intro>
+    #intro
+        background-attachment scroll
+    // </Intro>
+.wrapper.fullscreen
+    min-height calc(100vh - 2.5em)
 
 @media screen and (max-width: 736px)
     #navbar 
