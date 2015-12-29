@@ -20,14 +20,14 @@ html(lang="es")
       .inner
         nav
           ul
-            - var navbar_items = {'#one': 'Nosotros', '#two': 'Servicios', '#three': 'Equipo', '#four': '¡Contáctanos!'}
+            - var navbar_data = {'#one': 'Nosotros', '#two': 'Servicios', '#three': 'Equipo', '#four': '¡Contáctanos!'}
             li
               a.scrolly.active(href="#intro") ¡Hola!
           
-            each item, key in navbar_items
+            each item, key in navbar_data
                 li
                     //- FIX: href displays value surronded with 'undefined'
-                    a.scrolly(href=#{key}) #{navbar_items[key]}
+                    a.scrolly(href=#{key}) #{navbar_data[key]}
          
     //- Wrapper         
     #wrapper
@@ -39,10 +39,12 @@ html(lang="es")
 
         //- One
         section#one.wrapper.style2.spotlights.inactive
-             section.inactive
-                a.image(href="", style="background-image: url('images/pic01.jpg'); background-position: 50% 50%;")
-                    img(src="images/pic01.jpg", alt="", data-position="center center", style="display: none;")
-                .content
-                    .inner
-                        h2 Título1
-                        p Texto 1
+            - var one_data = [{'title':'Titulo1', 'content':'Texto1'},{'title':'Titulo2', 'content':'Texto2'},{'title':'Titulo3', 'content':'Texto3'}]
+            each item, i in one_data
+                section.inactive
+                    a.image(href="", style="background-image: url('images/pic01.jpg'); background-position: 50% 50%;")
+                        img(src="images/pic01.jpg", alt="", data-position="center center", style="display: none;")
+                    .content
+                        .inner
+                            h2 #{item.title}
+                            p #{item.content}
