@@ -20,16 +20,14 @@ html(lang="es")
       .inner
         nav
           ul
+            - var navbar_items = {'#one': 'Nosotros', '#two': 'Servicios', '#three': 'Equipo', '#four': '¡Contáctanos!'}
             li
               a.scrolly.active(href="#intro") ¡Hola!
-            li
-              a.scrolly(href="#one") Nosotros
-            li
-              a.scrolly(href="#two") Servicios
-            li
-              a.scrolly(href="#three") Equipo
-            li
-              a.scrolly(href="#four") ¡Contáctanos!
+          
+            each item, key in navbar_items
+                li
+                    //- FIX: href displays value surronded with 'undefined'
+                    a.scrolly(href=#{key}) #{navbar_items[key]}
          
     //- Wrapper         
     #wrapper
