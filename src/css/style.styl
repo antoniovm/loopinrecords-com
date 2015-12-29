@@ -60,6 +60,16 @@ a
         flex-direction column
         justify-content center
         min-height 100vh
+        
+    > .inner
+        padding 5em 5em 3em 5em
+        max-width 100%
+        width 75em
+        
+    &.fade-up > .inner
+        transform translateY(0)
+        transition opacity 1s ease, transform 1s ease
+        opacity 1.0
 
 // <Navigation bar>
 #navbar
@@ -153,7 +163,7 @@ a
 // <Intro>
 #intro
     background-attachment fixed
-    background-image url("images/intro.svg")
+    // background-image url("images/intro.svg")
     background-position top right
     background-repeat no-repeat
     background-size 100% 100%
@@ -162,6 +172,9 @@ a
 @media screen and (max-width: 1680px)
     body, input, select, textarea 
         font-size 13pt
+        
+    .wrapper > .inner
+        padding 4em 4em 2em 4em
     
 @media screen and (max-width: 1280px)
     body, input, select, textarea 
@@ -215,10 +228,19 @@ a
     // <Intro>
     #intro
         background-attachment scroll
+        
+        
+    .wrapper
+        &.fullscreen
+            min-height calc(100vh - 2.5em)
+            
+        > .inner
+            width 100%
     // </Intro>
-.wrapper.fullscreen
-    min-height calc(100vh - 2.5em)
-
+    
 @media screen and (max-width: 736px)
     #navbar 
         display none
+        
+    .wrapper > .inner 
+        padding 3em 2em 1em 2em
