@@ -80,23 +80,7 @@ h2
         transform translateY(0)
         transition opacity 1s ease, transform 1s ease
         opacity 1.0
-        
-
-
-
-// <Intro>
-#intro
-    background-attachment fixed
-    // background-image url("images/intro.svg")
-    background-position top right
-    background-repeat no-repeat
-    background-size 100% 100%
     
-    p 
-        font-size 1.25em
-// </Intro>
-    
-// <Spotlights>
 .image
     border-radius 0.25em
     border 0
@@ -107,57 +91,7 @@ h2
         border-radius 0.25em
         display block
 
-.spotlights
-    > section
-        display flex
-        flex-direction row
-        min-height 22.5em
-        
-        for n in 1 2
-            &:nth-child({n + 1})
-                background-color: rgba(0, 0, 0, 0.05 * n) 
-                
-        > .image
-            background-position: center center
-            background-size: cover
-            border-radius: 0
-            display: block
-            position: relative
-            width: 25em
-            
-            &:before
-                transition opacity 1s ease
-                background rgba(49, 36, 80, 0.9)
-                content ''
-                display block
-                height 100%
-                left 0
-                opacity 0
-                position absolute
-                top 0
-                width 100%
-                
-            img
-                border-radius 0
-                display block
-                
-        &.inactive > .image:before
-            opacity 1
-            
-        > .content
-            padding: 4em 5em 2em 5em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 50em;
-            flex: 1;
-            
-            .inner
-                transform translateX(0) translateY(0)
-                transition opacity 1s ease, transform 1s ease
-                opacity 1
-
-// </Spotlights>
+//- ------------------------1680px------------------------
 @media screen and (max-width: 1680px)
     body, input, select, textarea 
         font-size 13pt
@@ -165,40 +99,19 @@ h2
     .wrapper > .inner
         padding 4em 4em 2em 4em
         
-    .spotlights 
-        > section 
-            > .content
-                padding 4em 4em 2em 4em
-    
+//- ------------------------1280px------------------------
 @media screen and (max-width: 1280px)
     body, input, select, textarea 
         font-size 12pt
 
-    // <Intro>
-    #intro
-        background-attachment scroll
-        
-        
     .wrapper
         &.fullscreen
             min-height calc(100vh - 2.5em)
             
         > .inner
             // width 100%
-    // </Intro>
-    
-@media screen and (max-width: 980px)
-    .spotlights 
-        > section 
-            display block
-            
-            > .image
-                width 100%
-                height 50vh
-            > .content
-                width 100%
                 
-    
+//- ------------------------736px------------------------
 @media screen and (max-width: 736px)
     .wrapper > .inner 
         padding 3em 2em 1em 2em
@@ -208,16 +121,3 @@ h2
 
     h2
         font-size 1.25em
-
-    #intro p 
-        font-size 1em
-        
-    .spotlights 
-        > section 
-            > .image
-                height 50vh
-                min-height 15em
-                
-            > .content
-                padding 3em 2em 1em 2em
-

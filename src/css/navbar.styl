@@ -1,0 +1,142 @@
+@import "colors"
+
+// <variables>
+navbar-height = 3.5em
+// </variables>
+
+#navbar
+    height navbar-height
+    left 0
+    line-height navbar-height
+    overflow hidden
+    padding 0 
+    background navbar-bg-color
+    cursor default
+    position fixed
+    text-align center
+    top 0
+    width 100%
+    height navbar-height
+    z-index 10000
+    
+    > .inner 
+        display flex
+        flex-direction column
+        justify-content center
+        transform translateY(0)
+        transition opacity 1s ease
+        min-height 100%
+        opacity 1
+        width 100%
+    
+    nav 
+        > ul 
+            list-style none
+            padding 0
+        
+            > li
+                transform translateY(0)
+                transition opacity 0.15s ease, transform 0.75s ease
+                margin 1.5em 0 0 0
+                opacity 1
+                padding 0
+                position relative
+    
+                > &:first-child
+                    margin: 0
+
+                for n in 1 2 3 4 5
+                    > &:nth-child({n})
+                        transition-delay n * 0.2 + 0.25s
+
+        a
+            transition color 0.2s ease
+            border 0
+            color rgba(255, 255, 255, 0.35)
+            display block
+            font-size 0.6em
+            font-weight bold
+            letter-spacing 0.25em
+            line-height 1.75
+            outline 0
+            padding 1.35em 0
+            position relative
+            text-decoration none
+            text-transform uppercase
+            
+            &:before
+            &:after 
+                border-radius 0.2em
+                bottom 0
+                content ''
+                height 0.2em
+                position absolute
+                right 0
+                width 100%
+                
+            &:after 
+                background-image linear-gradient(to right, intro-bg-color, navbar-after-link-color)
+                transition max-width 0.2s ease
+                max-width 0
+
+            &.active
+                color navbar-color
+
+            &.active:hover
+                color navbar-color
+                
+            &.active:after
+                max-width 100% 
+                
+            &:hover
+                color navbar-hover-color
+
+//- ------------------------1280px------------------------
+@media screen and (max-width: 1280px)
+    #navbar 
+        height navbar-height
+        left 0
+        line-height navbar-height
+        overflow hidden
+        padding 0
+        text-align center
+        top 0
+
+        > .inner 
+            flex-direction row
+            align-items stretch
+            height inherit
+            line-height inherit
+    
+        nav 
+            height inherit
+            line-height inherit
+            
+            ul 
+                display flex
+                height inherit
+                line-height inherit
+                margin 0
+                
+                li 
+                    display block
+                    height inherit
+                    line-height inherit
+                    margin 0 0 0 2em
+                    padding 0
+                    
+                    
+            a 
+                height inherit
+                line-height inherit
+                padding 0
+                
+                &:after
+                    background-image none
+                    background-color navbar-after-link-color
+
+
+//- ------------------------736px------------------------
+@media screen and (max-width: 736px)
+    #navbar 
+        display none

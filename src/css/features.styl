@@ -1,0 +1,83 @@
+@import "colors"
+
+.spotlights
+    > section
+        display flex
+        flex-direction row
+        min-height 22.5em
+        
+        for n in 1 2
+            &:nth-child({n + 1})
+                background-color: rgba(0, 0, 0, 0.05 * n) 
+                
+        > .image
+            background-position: center center
+            background-size: cover
+            border-radius: 0
+            display: block
+            position: relative
+            width: 25em
+            
+            &:before
+                transition opacity 1s ease
+                background rgba(49, 36, 80, 0.9)
+                content ''
+                display block
+                height 100%
+                left 0
+                opacity 0
+                position absolute
+                top 0
+                width 100%
+                
+            img
+                border-radius 0
+                display block
+                
+        &.inactive > .image:before
+            opacity 1
+            
+        > .content
+            padding: 4em 5em 2em 5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50em;
+            flex: 1;
+            
+            .inner
+                transform translateX(0) translateY(0)
+                transition opacity 1s ease, transform 1s ease
+                opacity 1
+
+//- ------------------------1680px------------------------
+@media screen and (max-width: 1680px)
+    .spotlights 
+            > section 
+                > .content
+                    padding 4em 4em 2em 4em
+                    
+//- ------------------------980px------------------------
+@media screen and (max-width: 980px)
+    .spotlights 
+        > section 
+            display block
+            
+            > .image
+                width 100%
+                height 50vh
+            > .content
+                width 100%
+
+//- ------------------------736px------------------------
+@media screen and (max-width: 736px)
+    .spotlights 
+        > section 
+            > .image
+                height 50vh
+                min-height 15em
+                
+            > .content
+                padding 3em 2em 1em 2em
+
+
