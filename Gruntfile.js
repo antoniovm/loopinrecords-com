@@ -83,7 +83,9 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
-          data: {}
+          data: function(dest, src) {
+            return require('./src/content.json');
+          }
         },
         files: [{
           expand: true,
@@ -105,7 +107,7 @@ module.exports = function(grunt) {
         tasks: [ 'scripts' ]
       },
       jade: {
-        files: 'src/**/*.jade',
+        files: [ 'src/**/*.jade', 'src/**/*.json' ],
         tasks: [ 'jade' ],
         options: {
           livereload: true,
