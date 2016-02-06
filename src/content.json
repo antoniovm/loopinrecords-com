@@ -2,8 +2,31 @@
   "content" :{
     "domain": "loopinrecords.com",
     "title": "Loopin Records",
-    "navbar": {},
-    "hello": {},
+    "navbar": {
+      "items": [
+        {
+          "href": "#intro",
+          "value": "¡Hola!"
+        },
+        {
+          "href": "#one",
+          "value": "Nosotros"
+        },
+        {
+          "href": "#two",
+          "value": "Servicios"
+        },
+        {
+          "href": "#three",
+          "value": "Equipo"
+        },
+        {
+          "href": "#four",
+          "value": "¡Contáctanos!"
+        }
+      ]
+    },
+    "intro": {},
     "us": {},
     "services": {},
     "gear": {},

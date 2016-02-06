@@ -20,13 +20,9 @@ html(lang="es")
       .inner
         nav
           ul
-            - var navbar_data = {"#one": "Nosotros", "#two": "Servicios", "#three": "Equipo", "#four": "¡Contáctanos!"}
-            li
-              a.scrolly.active(href="#intro") ¡Hola!
-          
-            each item, key in navbar_data
+            each item, i in content.navbar.items
                 li
-                    a.scrolly(href="#{key}") #{navbar_data[key]}
+                    a(class=(i===0 ? 'scrolly active' : 'scrolly'))(href="#{item.href}") #{item.value}
          
     //- Wrapper         
     #wrapper
