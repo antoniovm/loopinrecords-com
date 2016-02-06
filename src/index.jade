@@ -32,8 +32,8 @@ html(lang="es")
                 h1 #{content.title}
                 p #{content.intro.desc.value}
 
-        //- One
-        section#one.wrapper.style2.spotlights.inactive
+        //- Two
+        section#two.wrapper.style2.spotlights.inactive
             - var one_data = [{"title":"Titulo1", "content":"Texto1"},{"title":"Titulo2", "content":"Texto2"},{"title":"Titulo3", "content":"Texto3"}]
             each item, i in one_data
                 section.inactive
@@ -44,8 +44,8 @@ html(lang="es")
                             h2 #{item.title}
                             p #{item.content}
                             
-        //- Two
-        section#two.wrapper.style3.fade-up
+        //- Three
+        section#three.wrapper.style3.fade-up
             .inner
                 h2 Titulo1
                 p Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
@@ -61,8 +61,8 @@ html(lang="es")
                         p Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
                         
                         
-        //- Three
-        section#three.wrapper.style1.fade-up
+        //- Four
+        section#four.wrapper.style1.fade-up
             .inner
                 h2 Titulo
                 p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque egestas risus. Nulla et aliquet nulla. Vestibulum eget nulla fermentum dolor scelerisque porta non eget elit.
