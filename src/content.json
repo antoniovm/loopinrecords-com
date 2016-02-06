@@ -5,23 +5,18 @@
     "navbar": {
       "items": [
         {
-          "href": "#intro",
           "value": "intro"
         },
         {
-          "href": "#us",
           "value": "us"
         },
         {
-          "href": "#services",
           "value": "services"
         },
         {
-          "href": "#gear",
           "value": "gear"
         },
         {
-          "href": "#contact",
           "value": "contact"
         }
       ]
@@ -55,11 +50,57 @@
       ]
     },
     "gear": {
-      "title": "Equipo"
+      "title": "Equipo",
+      "desc": "",
+      "items":[
+        {
+          "title": "Micrófonos",
+          "img": "",
+          "desc": "Micrófonos"
+        },
+        {
+          "title": "Previos",
+          "img": "",
+          "desc": "Previos"
+        },
+        {
+          "title": "Instrumentos",
+          "img": "",
+          "desc": "Instrumentos"
+        },
+        {
+          "title": "Software",
+          "img": "",
+          "desc": "Software"
+        }
+      ]
     },
     "contact": {
-      "title": "¡Contáctanos!"
+      "title": "¡Contáctanos!",
+      "desc": "",
+      "items": [
+        {
+          "title": "Dirección de correo",
+          "desc": "hi@loopinrecords.com"
+        }
+      ],
+      "social": {
+          "title": "Redes sociales",
+          "desc": ""
+        }
     },
-    "footer": {}
+    "footer": {
+      "copyright" : "© Loopin Records 2016. Todos los derechos reservados.",
+      "design": {
+        "design": "Diseño: ",
+        "url": "http://antoniovm.com",
+        "author": "Antonio Vicente Martín"
+      },
+      "powered": {
+        "powered": "Con soporte de ",
+        "url": "http://html5up.net",
+        "author": "HTML5 UP"
+      }
+    }
   }        
 }

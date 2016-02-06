@@ -55,37 +55,30 @@ html(lang="es")
         //- Gear
         section#gear.wrapper.style3.fade-up
             .inner
-                h2 Titulo1
-                p Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
+                h2 #{content.gear.title}
+                p #{content.gear.desc}
                 .features
-                    //- TODO: Make loop
-                    section
-                        span.icon.major.fa-code
-                        h3 Titulo
-                        p Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
-                    section
-                        span.icon.major.fa-code
-                        h3 Titulo
-                        p Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.
+                    each item in content.gear.items
+                        section
+                            span.icon.major.fa-code
+                            h3 #{item.title}
+                            p #{item.desc}
                         
                         
         //- Contact
         section#contact.wrapper.style1.fade-up
             .inner
-                h2 Titulo
-                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque egestas risus. Nulla et aliquet nulla. Vestibulum eget nulla fermentum dolor scelerisque porta non eget elit.
+                h2 #{content.contact.title}
+                p #{content.contact.desc}
                 section
                     ul.contact
+                        each item in content.contact.items
+                            li
+                                h3 #{item.title}
+                                span #{item.desc}
+                                
                         li
-                            h3 Direccion
-                            span Somewhere Road #654
-                            
-                        li
-                            h3 e-mail
-                            span mail@mail.com
-                            
-                        li
-                            h3 Social
+                            h3 #{content.contact.social.title}
                             ul.icons
                                 li
                                     a.fa-twitter
@@ -95,9 +88,9 @@ html(lang="es")
     footer#footer.wrapper.style1-alt
         .inner
             ul.menu
-                li © Loopin Records. All rights reserved.
-                li Diseño: 
-                    a(href="http://antoniovm.com") Antonio Vicente Martín
-                li Con soporte de 
-                    a(href="http://html5up.net") HTML5 UP
+                li #{content.footer.copyright}
+                li #{content.footer.design.design} 
+                    a(href="#{content.footer.design.url}") #{content.footer.design.author}
+                li #{content.footer.powered.powered}
+                    a(href="#{content.footer.powered.url}") #{content.footer.powered.author}
                     
