@@ -1,7 +1,4 @@
-@import "colors"
-
-#sidebar + #wrapper + #footer
-    margin-left 18em
+@import "values"
     
 .wrapper.style1-alt
     background-color footer-bg-color
@@ -11,6 +8,7 @@
         .menu 
             font-size 0.8em
             color rgba(255, 255, 255, 0.15)
+            
 
 ul.menu
         list-style none
@@ -32,10 +30,22 @@ ul.menu
 //@media screen and (max-width: 1680px)
     
 //- ------------------------1280px------------------------
-@media screen and (max-width: 1280px)
-    #sidebar + #wrapper + #footer 
-        margin-left 0  
+//@media screen and (max-width: 1280px)  
             
 //- ------------------------736px------------------------
-//@media screen and (max-width: 736px)
+@media screen and (max-width: 736px)
+    ul.menu > li 
+        border-left 0
+        display block
+        line-height inherit
+        margin 0.5em 0 0 0
+        padding-left 0
   
+//- ------------------------480px------------------------
+/*@media screen and (max-width: 480px)
+    ul.menu > li 
+        border-left 0
+        display block
+        line-height inherit
+        margin 0.5em 0 0 0
+        padding-left 0*/
