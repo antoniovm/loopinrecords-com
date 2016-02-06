@@ -26,7 +26,11 @@
         }
       ]
     },
-    "intro": {},
+    "intro": {
+      "desc" : {
+        "value" : "Creamos, producimos y grabamos. Permítenos llevar tus obras a su máximo nivel."
+      }
+    },
     "us": {},
     "services": {},
     "gear": {},
