@@ -9,19 +9,19 @@
           "value": "¡Hola!"
         },
         {
-          "href": "#one",
+          "href": "#us",
           "value": "Nosotros"
         },
         {
-          "href": "#two",
+          "href": "#services",
           "value": "Servicios"
         },
         {
-          "href": "#three",
+          "href": "#gear",
           "value": "Equipo"
         },
         {
-          "href": "#four",
+          "href": "#contact",
           "value": "¡Contáctanos!"
         }
       ]
