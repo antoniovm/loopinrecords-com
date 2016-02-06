@@ -6,34 +6,60 @@
       "items": [
         {
           "href": "#intro",
-          "value": "¡Hola!"
+          "value": "intro"
         },
         {
           "href": "#us",
-          "value": "Nosotros"
+          "value": "us"
         },
         {
           "href": "#services",
-          "value": "Servicios"
+          "value": "services"
         },
         {
           "href": "#gear",
-          "value": "Equipo"
+          "value": "gear"
         },
         {
           "href": "#contact",
-          "value": "¡Contáctanos!"
+          "value": "contact"
         }
       ]
     },
     "intro": {
-      "desc" : {
-        "value" : "Creamos, producimos y grabamos. Permítenos llevar tus obras a su máximo nivel."
-      }
+      "title": "¡Hola!",
+      "desc" : "Creamos, producimos y grabamos. Permítenos llevar tus obras a su máximo nivel."
     },
-    "us": {},
-    "services": {},
-    "gear": {},
-    "contact": {}
+    "us": {
+      "title": "Nosotros",
+      "img": "",
+      "desc": [
+        "Somos un joven estudio situado al sur de Almería. Con más de 10 años de experiencia en el sector musical, estamos especializados en dar servicios de producción, interpretación, arreglos y grabación a nivel profesional de forma económica. Contamos con material de primera calidad y profesionales con mucho talento y dominio de todo material. Además contamos con grandes músicos para la interpretación de cualquier tipo de obra. ",
+        "Realizamos tanto producciones programadas con instrumentos virtuales como grabaciones de instrumentos reales. Trabajamos con cualquier estilo de música, y ofrecemos servicios de transcripción de partituras y arreglos para bandas y orquestas.",
+        "Además todos nuestros servicios pueden ser disfrutados online desde cualquier lugar."
+      ]
+    },
+    "services": {
+      "title": "Servicios",
+      "items":[
+        {
+          "title": "Grabación, mezcla y mastering",
+          "img": "",
+          "desc": "Realizamos la grabación completa de la producción. Posteriormente relizamos el proceso de mezcla, y por último le damos la fuerza que necesita el tema en el proceso de mastering."
+        },
+        {
+          "title": "Partituras",
+          "img": "",
+          "desc": "Si necesitas registrar tus obras, necesitas escribir un arreglo de tu obra para otros músicos o simplemente quieres tener tu obra escrita en lenguaje musical, nosotros nos encargamos."
+        }
+      ]
+    },
+    "gear": {
+      "title": "Equipo"
+    },
+    "contact": {
+      "title": "¡Contáctanos!"
+    },
+    "footer": {}
   }        
 }
