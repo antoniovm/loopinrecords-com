@@ -7,11 +7,22 @@ module.exports = function(grunt) {
     
     copy: {
       build: {
-        cwd: 'src',
-        src: [ '**', '!**/*.styl', '!**/*.coffee', '!**/*.jade' ],
-        dest: 'build',
-        expand: true
-      },
+        files: [
+          {
+            cwd: 'bower_components',
+            src: [ '**/*.min.js' ],
+            dest: 'build/js',
+            expand: true,
+            flatten: true
+          },
+          {
+            cwd: 'src',
+            src: [ '**', '!tpl', '!**/*.styl', '!**/*.coffee', '!**/*.jade', '!**/*.json' ],
+            dest: 'build',
+            expand: true
+          }
+        ]
+      }
     },
 
     clean: {
@@ -19,10 +30,10 @@ module.exports = function(grunt) {
         src: [ 'build/**' ]
       },
       stylesheets: {
-        src: [ 'build/**/*.css', '!build/style.css' ]
+        src: [ 'build/**/*.css', '!build/css/style.css' ]
       },
       scripts: {
-        src: [ 'build/**/*.js', '!build/script.js' ]
+        src: [ 'build/**/*.js', '!build/js/script.js', '!build/**/*.min.js' ]
       },
     },
 
@@ -54,7 +65,7 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         files: {
-          'build/style.css': [ 'build/css/*.css' ]
+          'build/css/style.css': [ 'build/css/*.css' ]
         }
       }
     },
@@ -64,7 +75,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'src',
         src: [ '**/*.coffee' ],
-        dest: 'build',
+        dest: 'build/js',
         ext: '.js'
       }
     },
@@ -75,7 +86,7 @@ module.exports = function(grunt) {
           mangle: false
         },
         files: {
-          'build/script.js': [ 'build/**/*.js' ]
+          'build/js/script.js': [ 'build/**/*.js', '!build/**/*.min.js' ]
         }
       }
     },
