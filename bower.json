@@ -1,0 +1,21 @@
+{
+  "name": "loopinrecords-com",
+  "description": "Official site of Loopin Records.",
+  "main": "index.html",
+  "authors": [
+    "Antonio Vicente Martin"
+  ],
+  "license": "UNLICENSED",
+  "moduleType": [
+    "globals"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
