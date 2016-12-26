@@ -19,6 +19,8 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "jquery.scrollex": "^0.2.0",
+    "jquery.scroolly": "^0.0.1"
   }
 }
