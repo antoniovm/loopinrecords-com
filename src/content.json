@@ -27,7 +27,7 @@
     },
     "us": {
       "title": "Nosotros",
-      "img": "",
+      "img": "img/pianolateral.jpg",
       "desc": [
         "Somos un joven estudio situado al sur de Almería. Con más de 10 años de experiencia en el sector musical, estamos especializados en dar servicios de producción, interpretación, arreglos y grabación a nivel profesional de forma económica. Contamos con material de primera calidad y profesionales con mucho talento y dominio de todo material. Además contamos con grandes músicos para la interpretación de cualquier tipo de obra. ",
         "Realizamos tanto producciones programadas con instrumentos virtuales como grabaciones de instrumentos reales. Trabajamos con cualquier estilo de música, y ofrecemos servicios de transcripción de partituras y arreglos para bandas y orquestas.",
@@ -39,13 +39,18 @@
       "items":[
         {
           "title": "Grabación, mezcla y mastering",
-          "img": "",
+          "img": "img/grabacion.jpg",
           "desc": "Realizamos la grabación completa de la producción. Posteriormente relizamos el proceso de mezcla, y por último le damos la fuerza que necesita el tema en el proceso de mastering."
         },
         {
-          "title": "Partituras",
-          "img": "",
+          "title": "Transcripciones en partitura",
+          "img": "img/partitura.jpg",
           "desc": "Si necesitas registrar tus obras, necesitas escribir un arreglo de tu obra para otros músicos o simplemente quieres tener tu obra escrita en lenguaje musical, nosotros nos encargamos."
+        },
+        {
+          "title": "Producción",
+          "img": "img/microfono.jpg",
+          "desc": "¿Quieres darle forma a tus composiciones? Moldeamos tu obra hasta darle la forma que necesita para exprimirla al máximo."
         }
       ]
     },
@@ -55,23 +60,23 @@
       "items":[
         {
           "title": "Micrófonos",
-          "img": "",
-          "desc": "Micrófonos"
+          "img": "img/microfono.jpg",
+          "desc": "AKG C414II x2, Rode NT2A, AKG C2000, Shure PG81 x2, Shure PG56 x3, Shure PG52, Shure SM57 x2, Shure SM58"
         },
         {
           "title": "Previos",
-          "img": "",
-          "desc": "Previos"
+          "img": "img/goldmike.jpg",
+          "desc": "SPL GoldMike 9844, Fredenstein F200, Apogee Rosseta800 192k, Focusrite Liquid Saffire 56, Focusrite Scarlett 18i20, Focusrite Scarlett 2i4"
         },
         {
-          "title": "Instrumentos",
-          "img": "",
-          "desc": "Instrumentos"
+          "title": "Backline",
+          "img": "img/bateria.jpg",
+          "desc": "Guitarras: Tanglewood Les Paul, Aria , Admira, Alhambra, Epiphone, Cort 12 string, Bajos: Cort Action Bass, Fender Squier, Batería: , Pearl Export Series Kit, Pearl Snare 14”x6.5” Sensitone, Paiste 101 Ride 20”, Paiste 2002 Crash 16”, Crash/Ride 20”, Crash 18”, Paiste Splash 12”, Paiste Hi Hat 14”, Teclados: Yamaha Upright U1, Clavia Nord Electro 3HP, M-Audio Keystation 63, Amplificadores: Fender 212 100W, Marshall 100W"
         },
         {
           "title": "Software",
-          "img": "",
-          "desc": "Software"
+          "img": "img/focusrite.jpg",
+          "desc": "Cubase Pro 8.5, Logic Pro X, Guitar Rig Pro 5, Waves Audio, Ozone iZotope 6, Melodyne, Native Instruments FM8, Ivory Pianos, EastWest QL Orchestra, Symphobia, EZDrummer, Addictive Drums, CineBrass, Sibelius 7"
         }
       ]
     },

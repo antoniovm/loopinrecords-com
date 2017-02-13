@@ -37,7 +37,7 @@ html(lang="es")
             .inner
                 h2.major #{content.us.title}
                 span.image.fit
-                    img(src="temp", alt="")
+                    img(src="#{content.us.img}", alt="")
                     each item in content.us.desc
                       p #{item}
 
@@ -60,7 +60,8 @@ html(lang="es")
                 .features
                     each item in content.gear.items
                         section
-                            span.icon.major.fa-code
+                            //- span.icon.major.fa-code
+                            a.icon(href="", style="background-image: url('#{item.img}');")
                             h3 #{item.title}
                             p #{item.desc}
                         

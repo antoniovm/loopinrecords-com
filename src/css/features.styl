@@ -9,7 +9,8 @@
     margin 0 0 2em 0
     
     section
-        padding 3.5em 3em 1em 7em
+        display inline-block
+        padding 3em
         width 50%
         border-top solid 1px rgba(255, 255, 255, 0.15)
         position relative
@@ -27,10 +28,18 @@
             transition opacity 0.5s ease, transform 0.5s ease
             transition-delay: 1s
             transform scale(1)
-            position absolute
-            left 3em
-            top 3em
+            border-radius 50%
             opacity 1
+            background-position 50% 50%
+            background-size 8em
+            height 5em
+            width 5em
+            float left
+            margin-right 2em
+
+        p
+            margin 0
+            font-size .8em
 
 .icon
     text-decoration none
@@ -51,7 +60,7 @@
 //- ------------------------980px------------------------
 @media screen and (max-width: 980px)
     .features
-        display block
+        //- display block
         
         section
             border-top-width 1px !important
@@ -65,8 +74,10 @@
 @media screen and (max-width: 736px)
     .features
         section
-            padding 2.5em 1.5em 0.1em 5.5em
+            padding 2em
+
+            
             
             .icon
-                left 1.5em
-                top 2em
+                //- left 1.5em
+                //- top 2em
